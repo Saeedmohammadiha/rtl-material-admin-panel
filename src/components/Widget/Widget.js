@@ -79,16 +79,16 @@ export default function Widget({
         disableAutoFocusItem
       >
         <MenuItem>
-          <Typography>Edit</Typography>
+          <Typography>ویرایش</Typography>
         </MenuItem>
         <MenuItem>
-          <Typography>Copy</Typography>
+          <Typography>کپی</Typography>
         </MenuItem>
         <MenuItem>
-          <Typography>Delete</Typography>
+          <Typography>حذف</Typography>
         </MenuItem>
         <MenuItem>
-          <Typography>Print</Typography>
+          <Typography>پرینت</Typography>
         </MenuItem>
       </Menu>
     </div>

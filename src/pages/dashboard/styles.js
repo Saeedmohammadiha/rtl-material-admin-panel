@@ -62,7 +62,7 @@ export default makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   legendElementText: {
-    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
   },
   serverOverviewElement: {
     display: "flex",
@@ -102,7 +102,7 @@ export default makeStyles(theme => ({
   mainChartHeaderLabel: {
     display: "flex",
     alignItems: "center",
-    marginLeft: theme.spacing(3),
+    marginRight: theme.spacing(3),
   },
   mainChartSelectRoot: {
     borderColor: theme.palette.text.hint + "80 !important",
@@ -113,7 +113,7 @@ export default makeStyles(theme => ({
   },
   mainChartLegentElement: {
     fontSize: "18px !important",
-    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
   },
   success: {
     backgroundColor: theme.palette.success.main,

@@ -21,7 +21,7 @@ export default makeStyles(theme => ({
     overflowX: "hidden",
   },
   materialIconText: {
-    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
     fontSize: 14,
   },
   iconsContainer: {

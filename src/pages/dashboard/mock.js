@@ -2,32 +2,32 @@ const mock = {
   tasks: [
     {
       id: 0,
-      type: "Meeting",
-      title: "Meeting with Andrew Piker",
+      type: "ملاقات",
+      title: "ملاقات با سعید محمدیها",
       time: "9:00"
     },
     {
       id: 1,
-      type: "Call",
-      title: "Call with HT Company",
+      type: "تماس",
+      title: "تماس با کمپانی ",
       time: "12:00"
     },
     {
       id: 2,
-      type: "Meeting",
-      title: "Meeting with Zoe Alison",
+      type: "ملاقات",
+      title: "ملاقات با سعید محمدیها",
       time: "14:00"
     },
     {
       id: 3,
-      type: "Interview",
-      title: "Interview with HR",
+      type: "مصاحبه",
+      title: "مصاحبه با منابع انسانی",
       time: "15:00"
     }
   ],
   bigStat: [
     {
-      product: "Light Blue",
+      product: "آبی کمرنگ",
       total: {
         monthly: 4232,
         weekly: 1465,
@@ -47,7 +47,7 @@ const mock = {
       }
     },
     {
-      product: "Sing App",
+      product: "برنامه اواز",
       total: {
         monthly: 754,
         weekly: 180,
@@ -130,53 +130,43 @@ const mock = {
   table: [
     {
       id: 0,
-      name: "Mark Otto",
+      name: "سعید محمدیها",
       email: "ottoto@wxample.com",
-      product: "ON the Road",
-      price: "$25 224.2",
+      product: "در ادامه",
+      price: "$2000",
       date: "11 May 2017",
-      city: "Otsego",
-      status: "Sent"
+      city: "کرج",
+      status: "ارسال شده"
     },
     {
       id: 1,
-      name: "Jacob Thornton",
+      name: "سعید محمدیها",
       email: "thornton@wxample.com",
       product: "HP Core i7",
-      price: "$1 254.2",
+      price: "$1000",
       date: "4 Jun 2017",
-      city: "Fivepointville",
-      status: "Sent"
+      city: "کرج",
+      status: "ارسال شده"
     },
     {
       id: 2,
-      name: "Larry the Bird",
+      name: "سعید محمدیها",
       email: "bird@wxample.com",
       product: "Air Pro",
-      price: "$1 570.0",
+      price: "$1500",
       date: "27 Aug 2017",
-      city: "Leadville North",
-      status: "Pending"
+      city: "تهران",
+      status: "در انتظار"
     },
     {
       id: 3,
-      name: "Joseph May",
+      name: "سعید محمدیها",
       email: "josephmay@wxample.com",
       product: "Version Control",
-      price: "$5 224.5",
+      price: "$5000",
       date: "19 Feb 2018",
-      city: "Seaforth",
-      status: "Declined"
-    },
-    {
-      id: 4,
-      name: "Peter Horadnia",
-      email: "horadnia@wxample.com",
-      product: "Let's Dance",
-      price: "$43 594.7",
-      date: "1 Mar 2018",
-      city: "Hanoverton",
-      status: "Sent"
+      city: "کرج",
+      status: "رد شده"
     }
   ]
 };

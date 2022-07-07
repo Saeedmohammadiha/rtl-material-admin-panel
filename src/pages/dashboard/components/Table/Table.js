@@ -10,9 +10,9 @@ import {
 import useStyles from "../../styles";
 
 const states = {
-  sent: "success",
-  pending: "warning",
-  declined: "secondary",
+  'ارسال شده': "success",
+  'در انتظار': "warning",
+  'رد شده': "secondary",
 };
 
 export default function TableComponent({ data }) {
@@ -24,9 +24,16 @@ export default function TableComponent({ data }) {
     <Table className="mb-0">
       <TableHead>
         <TableRow>
-          {keys.map(key => (
+          {/* {keys.map(key => (
             <TableCell key={key}>{key}</TableCell>
-          ))}
+          ))} */}
+           <TableCell>نام</TableCell>
+           <TableCell>ایمیل</TableCell>
+           <TableCell>محصول</TableCell>
+           <TableCell>قیمت</TableCell>
+           <TableCell>تاریخ</TableCell>
+           <TableCell>شهر</TableCell>
+           <TableCell>وضعیت</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

@@ -36,10 +36,10 @@ import BigStat from "./components/BigStat/BigStat";
 
 const mainChartData = getMainChartData();
 const PieChartData = [
-  { name: "Group A", value: 400, color: "primary" },
-  { name: "Group B", value: 300, color: "secondary" },
-  { name: "Group C", value: 300, color: "warning" },
-  { name: "Group D", value: 200, color: "success" },
+  { name: "گروه A", value: 400, color: "primary" },
+  { name: "گروه B", value: 300, color: "secondary" },
+  { name: "گروه C", value: 300, color: "warning" },
+  { name: "گروه D", value: 200, color: "success" },
 ];
 
 export default function Dashboard(props) {
@@ -51,17 +51,17 @@ export default function Dashboard(props) {
 
   return (
     <>
-      <PageTitle title="Dashboard" button={<Button
+      <PageTitle title="داشبورد" button={<Button
       variant="contained"
       size="medium"
       color="secondary"
     >
-        Latest Reports
+        اخرین گزارشات 
     </Button>} />
       <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
-            title="Visits Today"
+            title="بازدید های امروز"
             upperTitle
             bodyClass={classes.fullHeightBody}
             className={classes.card}
@@ -104,19 +104,19 @@ export default function Dashboard(props) {
             >
               <Grid item xs={4}>
                 <Typography color="text" colorBrightness="secondary" noWrap>
-                  Registrations
+                  ثبت نام ها
                 </Typography>
                 <Typography size="md">860</Typography>
               </Grid>
               <Grid item xs={4}>
                 <Typography color="text" colorBrightness="secondary" noWrap>
-                  Sign Out
+                  خروج
                 </Typography>
                 <Typography size="md">32</Typography>
               </Grid>
               <Grid item xs={4}>
                 <Typography color="text" colorBrightness="secondary" noWrap>
-                  Rate
+                  امتیاز
                 </Typography>
                 <Typography size="md">3.25%</Typography>
               </Grid>
@@ -125,7 +125,7 @@ export default function Dashboard(props) {
         </Grid>
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
-            title="App Performance"
+            title="عملکرد"
             upperTitle
             className={classes.card}
             bodyClass={classes.fullHeightBody}
@@ -138,7 +138,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.legendElementText}
                 >
-                  Integration
+                  ادغام
                 </Typography>
               </div>
               <div className={classes.legendElement}>
@@ -159,7 +159,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Integration
+                ادغام
               </Typography>
               <LinearProgress
                 variant="determinate"
@@ -188,7 +188,7 @@ export default function Dashboard(props) {
         </Grid>
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
-            title="Server Overview"
+            title="سرور"
             upperTitle
             className={classes.card}
             bodyClass={classes.fullHeightBody}
@@ -268,7 +268,7 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
         <Grid item lg={3} md={4} sm={6} xs={12}>
-          <Widget title="Revenue Breakdown" upperTitle className={classes.card}>
+          <Widget title="تقسیم درآمد" upperTitle className={classes.card}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <ResponsiveContainer width="100%" height={144}>
@@ -317,25 +317,25 @@ export default function Dashboard(props) {
                   color="text"
                   colorBrightness="secondary"
                 >
-                  Daily Line Chart
+                  نمودار روزانه  
                 </Typography>
                 <div className={classes.mainChartHeaderLabels}>
                   <div className={classes.mainChartHeaderLabel}>
                     <Dot color="warning" />
                     <Typography className={classes.mainChartLegentElement}>
-                      Tablet
+                      تبلت
                     </Typography>
                   </div>
                   <div className={classes.mainChartHeaderLabel}>
                     <Dot color="primary" />
                     <Typography className={classes.mainChartLegentElement}>
-                      Mobile
+                      موبایل
                     </Typography>
                   </div>
                   <div className={classes.mainChartHeaderLabel}>
                     <Dot color="secondary" />
                     <Typography className={classes.mainChartLegentElement}>
-                      Desktop
+                      دسکتاب
                     </Typography>
                   </div>
                 </div>
@@ -353,9 +353,9 @@ export default function Dashboard(props) {
                   }
                   autoWidth
                 >
-                  <MenuItem value="daily">Daily</MenuItem>
-                  <MenuItem value="weekly">Weekly</MenuItem>
-                  <MenuItem value="monthly">Monthly</MenuItem>
+                  <MenuItem value="daily">روزانه</MenuItem>
+                  <MenuItem value="weekly">هفتگی</MenuItem>
+                  <MenuItem value="monthly">ماهانه</MenuItem>
                 </Select>
               </div>
             }
@@ -414,7 +414,7 @@ export default function Dashboard(props) {
         ))}
         <Grid item xs={12}>
           <Widget
-            title="Support Requests"
+            title="پشتیبانی درخواست ها"
             upperTitle
             noBodyPadding
             bodyClass={classes.tableWidget}

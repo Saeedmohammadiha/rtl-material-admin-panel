@@ -10,6 +10,7 @@ import {
   LibraryBooks as LibraryIcon,
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
+  ListAlt,
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
@@ -30,53 +31,54 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: -1, label: "لیست کتاب ها", link: "/app/booklist", icon: <ListAlt /> },
+  { id: 0, label: "داشبورد", link: "/app/dashboard", icon: <HomeIcon /> },
   {
     id: 1,
-    label: "Typography",
+    label: "تایپوگرافی",
     link: "/app/typography",
     icon: <TypographyIcon />,
   },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
+  { id: 2, label: "جدول ها", link: "/app/tables", icon: <TableIcon /> },
   {
     id: 3,
-    label: "Notifications",
+    label: "پیام ها",
     link: "/app/notifications",
     icon: <NotificationsIcon />,
   },
   {
     id: 4,
-    label: "UI Elements",
+    label: "UI عناصر",
     link: "/app/ui",
     icon: <UIElementsIcon />,
     children: [
-      { label: "Icons", link: "/app/ui/icons" },
-      { label: "Charts", link: "/app/ui/charts" },
-      { label: "Maps", link: "/app/ui/maps" },
+      { label: "آیکون ها", link: "/app/ui/icons" },
+      { label: "نمودارها", link: "/app/ui/charts" },
+      { label: "مقشه گوگل", link: "/app/ui/maps" },
     ],
   },
   { id: 5, type: "divider" },
-  { id: 6, type: "title", label: "HELP" },
-  { id: 7, label: "Library", link: "https://flatlogic.com/templates", icon: <LibraryIcon /> },
-  { id: 8, label: "Support", link: "https://flatlogic.com/forum", icon: <SupportIcon /> },
-  { id: 9, label: "FAQ", link: "https://flatlogic.com/forum", icon: <FAQIcon /> },
+  { id: 6, type: "title", label: "راهنما" },
+  { id: 7, label: "کتابخانه", link: "https://flatlogic.com/templates", icon: <LibraryIcon /> },
+  { id: 8, label: "پشتیبانی", link: "https://flatlogic.com/forum", icon: <SupportIcon /> },
+  { id: 9, label: "پرسش و پاسخ", link: "https://flatlogic.com/forum", icon: <FAQIcon /> },
   { id: 10, type: "divider" },
-  { id: 11, type: "title", label: "PROJECTS" },
+  { id: 11, type: "title", label: "پروژه ها" },
   {
     id: 12,
-    label: "My recent",
+    label: "پروژه های اخیر",
     link: "",
     icon: <Dot size="small" color="warning" />,
   },
   {
     id: 13,
-    label: "Starred",
+    label: "ستاره دار ها",
     link: "",
     icon: <Dot size="small" color="primary" />,
   },
   {
     id: 14,
-    label: "Background",
+    label: "در پس زمینه",
     link: "",
     icon: <Dot size="small" color="secondary" />,
   },

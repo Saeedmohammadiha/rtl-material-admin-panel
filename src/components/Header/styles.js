@@ -32,6 +32,8 @@ export default makeStyles(theme => ({
     flexGrow: 1,
   },
   search: {
+    marginLeft: theme.spacing(2),
+
     position: "relative",
     borderRadius: 25,
     paddingLeft: theme.spacing(2.5),
@@ -51,20 +53,21 @@ export default makeStyles(theme => ({
     },
   },
   searchIcon: {
+    zIndex: 1,
     width: 36,
-    right: 0,
+    left: 0,
     height: "100%",
     position: "absolute",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    transition: theme.transitions.create("right"),
+    transition: theme.transitions.create("left"),
     "&:hover": {
       cursor: "pointer",
     },
   },
   searchIconOpened: {
-    right: theme.spacing(1.25),
+    left: theme.spacing(1.25),
   },
   inputRoot: {
     color: "inherit",
@@ -94,18 +97,18 @@ export default makeStyles(theme => ({
     },
   },
   headerMenuButton: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(2.5),
     padding: theme.spacing(0.5),
   },
   headerMenuButtonSandwich: {
-    marginLeft: 9,
+    marginRight: 9,
     [theme.breakpoints.down("sm")]: {
-      marginLeft: 0
+      marginRight: 0
     },
     padding: theme.spacing(0.5),
   },
   headerMenuButtonCollapse: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   headerIcon: {
     fontSize: 28,
@@ -126,7 +129,7 @@ export default makeStyles(theme => ({
     color: theme.palette.text.hint,
   },
   profileMenuIcon: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
     color: theme.palette.text.hint,
     '&:hover': {
       color: theme.palette.primary.main,
@@ -151,11 +154,11 @@ export default makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   messageNotificationBodySide: {
     alignItems: "flex-start",
-    marginRight: 0,
+    marginLeft: 0,
   },
   sendMessageButton: {
     margin: theme.spacing(4),
@@ -164,12 +167,12 @@ export default makeStyles(theme => ({
     textTransform: "none",
   },
   sendButtonIcon: {
-    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
   },
   purchaseBtn: {
     [theme.breakpoints.down('sm')]: {
       display: 'none'
     },
-    marginRight: theme.spacing(3)
+    marginLeft: theme.spacing(3)
   }
 }));

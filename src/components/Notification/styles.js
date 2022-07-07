@@ -27,7 +27,7 @@ export default makeStyles(theme => ({
     color: "#FFFFFF80",
   },
   notificationIconContainerRounded: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   containedTypography: {
     color: "white",
@@ -37,6 +37,7 @@ export default makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "space-between",
     flexGrow: 1,
+    direction: 'rtl'
   },
   extraButton: {
     color: "white",

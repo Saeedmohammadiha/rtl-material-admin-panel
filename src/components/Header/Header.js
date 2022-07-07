@@ -40,52 +40,52 @@ const messages = [
   {
     id: 0,
     variant: "warning",
-    name: "Jane Hew",
-    message: "Hey! How is it going?",
+    name: "سعید محمدیها",
+    message: "سلام چطوری",
     time: "9:32",
   },
   {
     id: 1,
     variant: "success",
-    name: "Lloyd Brown",
-    message: "Check out my new Dashboard",
+    name: "سعید محمدی",
+    message: "داشبود جدید من رو نگاه کن",
     time: "9:18",
   },
   {
     id: 2,
     variant: "primary",
-    name: "Mark Winstein",
-    message: "I want rearrange the appointment",
+    name: "علی محمدیها",
+    message: "میخوام برنامه ها رو تغییر بدم",
     time: "9:15",
   },
   {
     id: 3,
     variant: "secondary",
-    name: "Liana Dutti",
-    message: "Good news from sale department",
+    name: "ستاره محدی",
+    message: "خبرهای خوب از واحد فروش دارم",
     time: "9:09",
   },
 ];
 
 const notifications = [
-  { id: 0, color: "warning", message: "Check out this awesome ticket" },
+  { id: 0, color: "warning", message: "پیام ها" },
   {
     id: 1,
     color: "success",
     type: "info",
-    message: "What is the best way to get ...",
+    message: "بهترین راه برای به دست آوردن...",
   },
   {
     id: 2,
     color: "secondary",
     type: "notification",
-    message: "This is just a simple notification",
+    message: "این یک نوتیفیکیشن ساده است",
   },
   {
     id: 3,
     color: "primary",
     type: "e-commerce",
-    message: "12 new orders has arrived today",
+    message: "12 سفارش جدید امروز دریافت شد",
   },
 ];
 
@@ -137,10 +137,10 @@ export default function Header(props) {
           )}
         </IconButton>
         <Typography variant="h6" weight="medium" className={classes.logotype}>
-          React Material Admin
+            پروژه مدیریت کتابحانه
         </Typography>
         <div className={classes.grow} />
-        <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} className={classes.purchaseBtn}>Unlock full version</Button>
+        {/* <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} className={classes.purchaseBtn}>Unlock full version</Button> */}
         <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,
@@ -155,7 +155,7 @@ export default function Header(props) {
             <SearchIcon classes={{ root: classes.headerIcon }} />
           </div>
           <InputBase
-            placeholder="Search…"
+            placeholder="جست و جو..."
             classes={{
               root: classes.inputRoot,
               input: classes.inputInput,
@@ -217,14 +217,14 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              New Messages
+              پیام های جدید
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="secondary"
             >
-              {messages.length} New Messages
+              {messages.length} پیام های جدید
             </Typography>
           </div>
           {messages.map(message => (
@@ -256,7 +256,7 @@ export default function Header(props) {
             aria-label="Add"
             className={classes.sendMessageButton}
           >
-            Send New Message
+            پیام جدید ارسال کن
             <SendIcon className={classes.sendButtonIcon} />
           </Fab>
         </Menu>
@@ -289,13 +289,13 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
+              سعید محمدیها
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="primary"
-              href="https://flatlogic.com"
+              href="#"
             >
               Flalogic.com
             </Typography>
@@ -306,7 +306,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Profile
+            <AccountIcon className={classes.profileMenuIcon} /> پروفایل
           </MenuItem>
           <MenuItem
             className={classNames(
@@ -314,7 +314,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Tasks
+            <AccountIcon className={classes.profileMenuIcon} /> وظایف
           </MenuItem>
           <MenuItem
             className={classNames(
@@ -322,7 +322,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Messages
+            <AccountIcon className={classes.profileMenuIcon} /> پیام ها
           </MenuItem>
           <div className={classes.profileMenuUser}>
             <Typography
@@ -330,7 +330,7 @@ export default function Header(props) {
               color="primary"
               onClick={() => signOut(userDispatch, props.history)}
             >
-              Sign Out
+              خروج
             </Typography>
           </div>
         </Menu>
